@@ -75,7 +75,7 @@ public class Diamonds {
         }
         return numberStars;
     }
-    
+
     private static  StringBuilder generateTriangleLine(int numberSpaces, int numberStars, StringBuilder builder){
         builder = repeat(" ", numberSpaces, builder);
         builder = repeat("*", numberStars, builder);
