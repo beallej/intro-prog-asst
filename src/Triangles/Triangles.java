@@ -1,6 +1,6 @@
 package Triangles;
 
-import com.sun.deploy.util.StringUtils;
+import static Utils.Utils.repeat;
 
 /**
  * Created by josiebealle on 09/09/2016.
@@ -49,19 +49,6 @@ public class Triangles {
     public static void printVerticalLine(int numberOfAsterisks) {
         String line = repeat("*\n", numberOfAsterisks);
         System.out.print(line);
-    }
-
-    private static String repeat(String toRepeat, int repeats) {
-        StringBuilder builder = new StringBuilder(repeats*toRepeat.length());
-        builder = repeat(toRepeat, repeats, builder);
-        return builder.toString();
-    }
-
-    private static StringBuilder repeat(String toRepeat, int repeats, StringBuilder builder) {
-        for (int i = 0; i < repeats; i++) {
-            builder.append(toRepeat);
-        }
-        return builder;
     }
 
     public static void printTriangle(int numberOfLines) {
